@@ -12,250 +12,236 @@ partial class FormReport
     /// <summary>
     /// Clean up any resources being used.
     /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
         if (disposing && (components != null))
-        {
             components.Dispose();
-        }
 
         base.Dispose(disposing);
     }
 
     #region Windows Form Designer generated code
 
-    /// <summary>
-    /// Required method for Designer support - do not modify
-    /// the contents of this method with the code editor.
-    /// </summary>
     private void InitializeComponent()
     {
-        panel1 = new System.Windows.Forms.Panel();
-        button2 = new System.Windows.Forms.Button();
-        button1 = new System.Windows.Forms.Button();
-        panel2 = new System.Windows.Forms.Panel();
-        button3 = new System.Windows.Forms.Button();
-        button4 = new System.Windows.Forms.Button();
-        dataGridView1 = new System.Windows.Forms.DataGridView();
-        button5 = new System.Windows.Forms.Button();
-        button6 = new System.Windows.Forms.Button();
-        panel3 = new System.Windows.Forms.Panel();
-        textBox1 = new System.Windows.Forms.TextBox();
-        textBox2 = new System.Windows.Forms.TextBox();
-        dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-        dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-        label1 = new System.Windows.Forms.Label();
-        label2 = new System.Windows.Forms.Label();
-        label3 = new System.Windows.Forms.Label();
-        label4 = new System.Windows.Forms.Label();
-        panel1.SuspendLayout();
-        panel2.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-        panel3.SuspendLayout();
+        pnlToolbar        = new System.Windows.Forms.Panel();
+        lblDenNgay        = new System.Windows.Forms.Label();
+        lblTuNgay         = new System.Windows.Forms.Label();
+        dtpdenngay        = new System.Windows.Forms.DateTimePicker();
+        dtpTungay         = new System.Windows.Forms.DateTimePicker();
+        btLammoi          = new System.Windows.Forms.Button();
+        btnTimKiem        = new System.Windows.Forms.Button();
+        btThem            = new System.Windows.Forms.Button();
+        dtgBaoCaoDoanhThu = new System.Windows.Forms.DataGridView();
+        btnXuatExcel      = new System.Windows.Forms.Button();
+        btnInhoadon       = new System.Windows.Forms.Button();
+        pnlRight          = new System.Windows.Forms.Panel();
+        lblThapnhat       = new System.Windows.Forms.Label();
+        lblCaoNhat        = new System.Windows.Forms.Label();
+        lblTongDoanhThu   = new System.Windows.Forms.Label();
+        lblTongSoDonHang  = new System.Windows.Forms.Label();  // Đã sửa typo: HnAg → Hang
+        panel4            = new System.Windows.Forms.Panel();
+
+        pnlToolbar.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dtgBaoCaoDoanhThu).BeginInit();
+        pnlRight.SuspendLayout();
+        panel4.SuspendLayout();
         SuspendLayout();
-        // 
-        // panel1
-        // 
-        panel1.Controls.Add(dateTimePicker2);
-        panel1.Controls.Add(dateTimePicker1);
-        panel1.Controls.Add(textBox2);
-        panel1.Controls.Add(textBox1);
-        panel1.Controls.Add(button2);
-        panel1.Controls.Add(button1);
-        panel1.Location = new System.Drawing.Point(30, 12);
-        panel1.Name = "panel1";
-        panel1.Size = new System.Drawing.Size(731, 75);
-        panel1.TabIndex = 1;
-        // 
-        // button2
-        // 
-        button2.Location = new System.Drawing.Point(612, 17);
-        button2.Name = "button2";
-        button2.Size = new System.Drawing.Size(116, 42);
-        button2.TabIndex = 1;
-        button2.Text = "Làm mới";
-        button2.UseVisualStyleBackColor = true;
-        // 
-        // button1
-        // 
-        button1.Location = new System.Drawing.Point(490, 19);
-        button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(116, 42);
-        button1.TabIndex = 0;
-        button1.Text = "Thêm";
-        button1.UseVisualStyleBackColor = true;
-        button1.Click += button1_Click;
-        // 
-        // panel2
-        // 
-        panel2.Controls.Add(button3);
-        panel2.Controls.Add(button4);
-        panel2.Location = new System.Drawing.Point(36, 48);
-        panel2.Name = "panel2";
-        panel2.Size = new System.Drawing.Size(731, 75);
-        panel2.TabIndex = 3;
-        // 
-        // button3
-        // 
-        button3.Location = new System.Drawing.Point(589, 16);
-        button3.Name = "button3";
-        button3.Size = new System.Drawing.Size(116, 42);
-        button3.TabIndex = 1;
-        button3.Text = "button2";
-        button3.UseVisualStyleBackColor = true;
-        // 
-        // button4
-        // 
-        button4.Location = new System.Drawing.Point(457, 16);
-        button4.Name = "button4";
-        button4.Size = new System.Drawing.Size(116, 42);
-        button4.TabIndex = 0;
-        button4.Text = "button1";
-        button4.UseVisualStyleBackColor = true;
-        // 
-        // dataGridView1
-        // 
-        dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        dataGridView1.Location = new System.Drawing.Point(43, 116);
-        dataGridView1.Name = "dataGridView1";
-        dataGridView1.RowHeadersWidth = 51;
-        dataGridView1.Size = new System.Drawing.Size(536, 349);
-        dataGridView1.TabIndex = 2;
-        dataGridView1.Text = "dataGridView1";
-        // 
-        // button5
-        // 
-        button5.Location = new System.Drawing.Point(30, 496);
-        button5.Name = "button5";
-        button5.Size = new System.Drawing.Size(100, 39);
-        button5.TabIndex = 3;
-        button5.Text = "Xuất Excel";
-        button5.UseVisualStyleBackColor = true;
-        // 
-        // button6
-        // 
-        button6.Location = new System.Drawing.Point(463, 494);
-        button6.Name = "button6";
-        button6.Size = new System.Drawing.Size(105, 41);
-        button6.TabIndex = 4;
-        button6.Text = "In hóa đơn";
-        button6.UseVisualStyleBackColor = true;
-        // 
-        // panel3
-        // 
-        panel3.Controls.Add(label4);
-        panel3.Controls.Add(label3);
-        panel3.Controls.Add(label2);
-        panel3.Controls.Add(label1);
-        panel3.Location = new System.Drawing.Point(597, 107);
-        panel3.Name = "panel3";
-        panel3.Size = new System.Drawing.Size(194, 387);
-        panel3.TabIndex = 5;
-        // 
-        // textBox1
-        // 
-        textBox1.Location = new System.Drawing.Point(13, 25);
-        textBox1.Name = "textBox1";
-        textBox1.Size = new System.Drawing.Size(86, 27);
-        textBox1.TabIndex = 2;
-        textBox1.Text = "Từ ngày";
-        // 
-        // textBox2
-        // 
-        textBox2.Location = new System.Drawing.Point(216, 25);
-        textBox2.Name = "textBox2";
-        textBox2.Size = new System.Drawing.Size(99, 27);
-        textBox2.TabIndex = 3;
-        textBox2.Text = "đến ngày";
-        // 
-        // dateTimePicker1
-        // 
-        dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-        dateTimePicker1.Location = new System.Drawing.Point(105, 23);
-        dateTimePicker1.Name = "dateTimePicker1";
-        dateTimePicker1.Size = new System.Drawing.Size(98, 27);
-        dateTimePicker1.TabIndex = 4;
-        // 
-        // dateTimePicker2
-        // 
-        dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-        dateTimePicker2.Location = new System.Drawing.Point(321, 25);
-        dateTimePicker2.Name = "dateTimePicker2";
-        dateTimePicker2.Size = new System.Drawing.Size(121, 27);
-        dateTimePicker2.TabIndex = 5;
-        // 
-        // label1
-        // 
-        label1.Location = new System.Drawing.Point(14, 41);
-        label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(150, 32);
-        label1.TabIndex = 0;
-        label1.Text = "Tổng số đơn hàng";
-        // 
-        // label2
-        // 
-        label2.Location = new System.Drawing.Point(14, 123);
-        label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(135, 32);
-        label2.TabIndex = 1;
-        label2.Text = "Tổng doanh thu";
-        // 
-        // label3
-        // 
-        label3.Location = new System.Drawing.Point(14, 202);
-        label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(147, 32);
-        label3.TabIndex = 2;
-        label3.Text = "Doanh thu cao nhất";
-        // 
-        // label4
-        // 
-        label4.Location = new System.Drawing.Point(14, 291);
-        label4.Name = "label4";
-        label4.Size = new System.Drawing.Size(147, 32);
-        label4.TabIndex = 3;
-        label4.Text = "Doanh thu thấp nhất";
-        // 
-        // FormReport
-        // 
+
+        // ── pnlToolbar ──────────────────────────────────
+        pnlToolbar.AutoScroll        = true;
+        pnlToolbar.AutoScrollMinSize = new System.Drawing.Size(0, 45);
+        pnlToolbar.Controls.Add(lblDenNgay);
+        pnlToolbar.Controls.Add(lblTuNgay);
+        pnlToolbar.Controls.Add(dtpdenngay);
+        pnlToolbar.Controls.Add(dtpTungay);
+        pnlToolbar.Controls.Add(btLammoi);
+        pnlToolbar.Controls.Add(btnTimKiem);
+        pnlToolbar.Controls.Add(btThem);
+        pnlToolbar.Dock     = System.Windows.Forms.DockStyle.Top;
+        pnlToolbar.Location = new System.Drawing.Point(0, 0);
+        pnlToolbar.Name     = "pnlToolbar";
+        pnlToolbar.Padding  = new System.Windows.Forms.Padding(8);
+        pnlToolbar.Size     = new System.Drawing.Size(800, 75);
+        pnlToolbar.TabIndex = 1;
+
+        // ── lblTuNgay (thay txtTungay) ──────────────────
+        lblTuNgay.AutoSize  = false;
+        lblTuNgay.Location  = new System.Drawing.Point(14, 26);
+        lblTuNgay.Name      = "lblTuNgay";
+        lblTuNgay.Size      = new System.Drawing.Size(70, 27);
+        lblTuNgay.TabIndex  = 6;
+        lblTuNgay.Text      = "Từ ngày:";
+        lblTuNgay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+        // ── dtpTungay ────────────────────────────────────
+        dtpTungay.Format   = System.Windows.Forms.DateTimePickerFormat.Short;
+        dtpTungay.Location = new System.Drawing.Point(88, 24);
+        dtpTungay.Name     = "dtpTungay";
+        dtpTungay.Size     = new System.Drawing.Size(110, 27);
+        dtpTungay.TabIndex = 0;
+
+        // ── lblDenNgay (thay txtDenngay) ─────────────────
+        lblDenNgay.AutoSize  = false;
+        lblDenNgay.Location  = new System.Drawing.Point(205, 26);
+        lblDenNgay.Name      = "lblDenNgay";
+        lblDenNgay.Size      = new System.Drawing.Size(75, 27);
+        lblDenNgay.TabIndex  = 7;
+        lblDenNgay.Text      = "Đến ngày:";
+        lblDenNgay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+
+        // ── dtpdenngay ───────────────────────────────────
+        dtpdenngay.Format   = System.Windows.Forms.DateTimePickerFormat.Short;
+        dtpdenngay.Location = new System.Drawing.Point(284, 24);
+        dtpdenngay.Name     = "dtpdenngay";
+        dtpdenngay.Size     = new System.Drawing.Size(110, 27);
+        dtpdenngay.TabIndex = 1;
+
+        // ── btnTimKiem ───────────────────────────────────
+        btnTimKiem.Location = new System.Drawing.Point(406, 19);
+        btnTimKiem.Name     = "btnTimKiem";
+        btnTimKiem.Size     = new System.Drawing.Size(90, 37);
+        btnTimKiem.TabIndex = 2;
+        btnTimKiem.Text     = "Tìm kiếm";
+        btnTimKiem.UseVisualStyleBackColor = true;
+        btnTimKiem.Click   += btnTimKiem_Click;
+
+        // ── btThem ───────────────────────────────────────
+        btThem.Location = new System.Drawing.Point(514, 19);
+        btThem.Name     = "btThem";
+        btThem.Size     = new System.Drawing.Size(100, 37);
+        btThem.TabIndex = 3;
+        btThem.Text     = "Thêm";
+        btThem.UseVisualStyleBackColor = true;
+        btThem.Click   += btThem_Click;
+
+        // ── btLammoi ─────────────────────────────────────
+        btLammoi.Location = new System.Drawing.Point(626, 19);
+        btLammoi.Name     = "btLammoi";
+        btLammoi.Size     = new System.Drawing.Size(100, 37);
+        btLammoi.TabIndex = 4;
+        btLammoi.Text     = "Làm mới";
+        btLammoi.UseVisualStyleBackColor = true;
+        btLammoi.Click   += btLammoi_Click;
+
+        // ── dtgBaoCaoDoanhThu ────────────────────────────
+        dtgBaoCaoDoanhThu.ColumnHeadersHeightSizeMode =
+            System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dtgBaoCaoDoanhThu.Dock             = System.Windows.Forms.DockStyle.Fill;
+        dtgBaoCaoDoanhThu.Location         = new System.Drawing.Point(0, 75);
+        dtgBaoCaoDoanhThu.Name             = "dtgBaoCaoDoanhThu";
+        dtgBaoCaoDoanhThu.RowHeadersVisible = false;
+        dtgBaoCaoDoanhThu.RowHeadersWidth  = 51;
+        dtgBaoCaoDoanhThu.Size             = new System.Drawing.Size(800, 405);
+        dtgBaoCaoDoanhThu.TabIndex         = 2;
+
+        // ── pnlRight ─────────────────────────────────────
+        pnlRight.AutoScroll       = true;
+        pnlRight.Controls.Add(lblThapnhat);
+        pnlRight.Controls.Add(lblCaoNhat);
+        pnlRight.Controls.Add(lblTongDoanhThu);
+        pnlRight.Controls.Add(lblTongSoDonHang);
+        pnlRight.Dock     = System.Windows.Forms.DockStyle.Right;
+        pnlRight.Location = new System.Drawing.Point(606, 75);
+        pnlRight.Name     = "pnlRight";
+        pnlRight.Size     = new System.Drawing.Size(194, 405);
+        pnlRight.TabIndex = 5;
+
+        // ── lblTongSoDonHang ─────────────────────────────
+        lblTongSoDonHang.Location  = new System.Drawing.Point(14, 41);
+        lblTongSoDonHang.Name      = "lblTongSoDonHang"; // Đã sửa typo
+        lblTongSoDonHang.Size      = new System.Drawing.Size(166, 32);
+        lblTongSoDonHang.TabIndex  = 0;
+        lblTongSoDonHang.Text      = "Tổng số đơn hàng";
+
+        // ── lblTongDoanhThu ──────────────────────────────
+        lblTongDoanhThu.Location  = new System.Drawing.Point(14, 123);
+        lblTongDoanhThu.Name      = "lblTongDoanhThu";
+        lblTongDoanhThu.Size      = new System.Drawing.Size(166, 32);
+        lblTongDoanhThu.TabIndex  = 1;
+        lblTongDoanhThu.Text      = "Tổng doanh thu";
+
+        // ── lblCaoNhat ───────────────────────────────────
+        lblCaoNhat.Location  = new System.Drawing.Point(14, 202);
+        lblCaoNhat.Name      = "lblCaoNhat";
+        lblCaoNhat.Size      = new System.Drawing.Size(166, 32);
+        lblCaoNhat.TabIndex  = 2;
+        lblCaoNhat.Text      = "Cao nhất";
+
+        // ── lblThapnhat ──────────────────────────────────
+        lblThapnhat.Location  = new System.Drawing.Point(14, 291);
+        lblThapnhat.Name      = "lblThapnhat";
+        lblThapnhat.Size      = new System.Drawing.Size(166, 32);
+        lblThapnhat.TabIndex  = 3;
+        lblThapnhat.Text      = "Thấp nhất";
+
+        // ── panel4 (bottom toolbar) ───────────────────────
+        panel4.AutoScroll       = true;
+        panel4.AutoScrollMinSize = new System.Drawing.Size(0, 45);
+        panel4.Controls.Add(btnInhoadon);
+        panel4.Controls.Add(btnXuatExcel);
+        panel4.Dock     = System.Windows.Forms.DockStyle.Bottom;
+        panel4.Location = new System.Drawing.Point(0, 480);
+        panel4.Name     = "panel4";
+        panel4.Size     = new System.Drawing.Size(606, 67);
+        panel4.TabIndex = 6;
+
+        // ── btnXuatExcel ─────────────────────────────────
+        btnXuatExcel.Location = new System.Drawing.Point(20, 15);
+        btnXuatExcel.Name     = "btnXuatExcel";
+        btnXuatExcel.Size     = new System.Drawing.Size(110, 39);
+        btnXuatExcel.TabIndex = 0;
+        btnXuatExcel.Text     = "Xuất Excel";
+        btnXuatExcel.UseVisualStyleBackColor = true;
+        btnXuatExcel.Click   += btnXuatExcel_Click;
+
+        // ── btnInhoadon ──────────────────────────────────
+        btnInhoadon.Location = new System.Drawing.Point(145, 15);
+        btnInhoadon.Name     = "btnInhoadon";
+        btnInhoadon.Size     = new System.Drawing.Size(110, 39);
+        btnInhoadon.TabIndex = 1;
+        btnInhoadon.Text     = "In hóa đơn";
+        btnInhoadon.UseVisualStyleBackColor = true;
+        btnInhoadon.Click   += btnInhoadon_Click;
+
+        // ── FormReport ───────────────────────────────────
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        ClientSize = new System.Drawing.Size(800, 547);
-        Controls.Add(panel3);
-        Controls.Add(button6);
-        Controls.Add(button5);
-        Controls.Add(dataGridView1);
-        Controls.Add(panel1);
+        AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
+        ClientSize          = new System.Drawing.Size(800, 547);
+        Controls.Add(panel4);
+        Controls.Add(pnlRight);
+        Controls.Add(dtgBaoCaoDoanhThu);
+        Controls.Add(pnlToolbar);
         Text = "Báo cáo doanh thu";
-        panel1.ResumeLayout(false);
-        panel1.PerformLayout();
-        panel2.ResumeLayout(false);
-        ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-        panel3.ResumeLayout(false);
+
+        pnlToolbar.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)dtgBaoCaoDoanhThu).EndInit();
+        pnlRight.ResumeLayout(false);
+        panel4.ResumeLayout(false);
         ResumeLayout(false);
     }
 
-    private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.Label label3;
-    private System.Windows.Forms.Label label4;
-
-    private System.Windows.Forms.Button button5;
-    private System.Windows.Forms.Button button6;
-    private System.Windows.Forms.Panel panel3;
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.TextBox textBox2;
-    private System.Windows.Forms.DateTimePicker dateTimePicker1;
-    private System.Windows.Forms.DateTimePicker dateTimePicker2;
-
-    private System.Windows.Forms.DataGridView dataGridView1;
-    private System.Windows.Forms.Panel panel1;
-    private System.Windows.Forms.Button button1;
-    private System.Windows.Forms.Button button2;
-    private System.Windows.Forms.Panel panel2;
-    private System.Windows.Forms.Button button3;
-    private System.Windows.Forms.Button button4;
-
     #endregion
+
+    // ── Field declarations ────────────────────────────────────────────────────
+    private System.Windows.Forms.Panel          pnlToolbar;
+    private System.Windows.Forms.Label          lblTuNgay;
+    private System.Windows.Forms.Label          lblDenNgay;
+    private System.Windows.Forms.DateTimePicker dtpTungay;
+    private System.Windows.Forms.DateTimePicker dtpdenngay;
+    private System.Windows.Forms.Button         btThem;
+    private System.Windows.Forms.Button         btnTimKiem;
+    private System.Windows.Forms.Button         btLammoi;
+
+    private System.Windows.Forms.DataGridView   dtgBaoCaoDoanhThu;
+
+    private System.Windows.Forms.Panel          pnlRight;
+    private System.Windows.Forms.Label          lblTongSoDonHang;   // Đã sửa typo
+    private System.Windows.Forms.Label          lblTongDoanhThu;
+    private System.Windows.Forms.Label          lblCaoNhat;
+    private System.Windows.Forms.Label          lblThapnhat;
+
+    private System.Windows.Forms.Panel          panel4;
+    private System.Windows.Forms.Button         btnXuatExcel;
+    private System.Windows.Forms.Button         btnInhoadon;
 }

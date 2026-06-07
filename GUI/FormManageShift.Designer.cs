@@ -4,215 +4,209 @@ namespace GUI;
 
 partial class FormManageShift
 {
-    /// <summary>
-    /// Required designer variable.
-    /// </summary>
     private IContainer components = null;
 
-    /// <summary>
-    /// Clean up any resources being used.
-    /// </summary>
-    /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
     protected override void Dispose(bool disposing)
     {
         if (disposing && (components != null))
         {
             components.Dispose();
         }
-
         base.Dispose(disposing);
     }
 
     #region Windows Form Designer generated code
 
-    /// <summary>
-    /// Required method for Designer support - do not modify
-    /// the contents of this method with the code editor.
-    /// </summary>
     private void InitializeComponent()
     {
-        dataGridView1 = new System.Windows.Forms.DataGridView();
-        button1 = new System.Windows.Forms.Button();
-        button2 = new System.Windows.Forms.Button();
-        button3 = new System.Windows.Forms.Button();
-        button4 = new System.Windows.Forms.Button();
-        label1 = new System.Windows.Forms.Label();
-        label2 = new System.Windows.Forms.Label();
-        label3 = new System.Windows.Forms.Label();
-        label4 = new System.Windows.Forms.Label();
-        panel1 = new System.Windows.Forms.Panel();
-        textBox1 = new System.Windows.Forms.TextBox();
-        textBox2 = new System.Windows.Forms.TextBox();
-        dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-        comboBox1 = new System.Windows.Forms.ComboBox();
-        ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-        panel1.SuspendLayout();
+        pnlFilter = new System.Windows.Forms.Panel();
+        lblMaNhanVien = new System.Windows.Forms.Label();
+        txtMaNhanVien = new System.Windows.Forms.TextBox();
+        lblTenNhanVien = new System.Windows.Forms.Label();
+        txtTenNhanVien = new System.Windows.Forms.TextBox();
+        lblCaLamViec = new System.Windows.Forms.Label();
+        cbbCaLamViec = new System.Windows.Forms.ComboBox();
+        lblNgayLam = new System.Windows.Forms.Label();
+        dtpNgayLam = new System.Windows.Forms.DateTimePicker();
+        dgvCaLamViec = new System.Windows.Forms.DataGridView();
+        pnlFooter = new System.Windows.Forms.Panel();
+        btThem = new System.Windows.Forms.Button();
+        btSua = new System.Windows.Forms.Button();
+        btXoa = new System.Windows.Forms.Button();
+        btLamMoi = new System.Windows.Forms.Button();
+
+        pnlFilter.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)dgvCaLamViec).BeginInit();
+        pnlFooter.SuspendLayout();
         SuspendLayout();
-        // 
-        // dataGridView1
-        // 
-        dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        dataGridView1.Location = new System.Drawing.Point(37, 110);
-        dataGridView1.Name = "dataGridView1";
-        dataGridView1.RowHeadersWidth = 51;
-        dataGridView1.Size = new System.Drawing.Size(797, 406);
-        dataGridView1.TabIndex = 0;
-        dataGridView1.Text = "dataGridView1";
-        // 
-        // button1
-        // 
-        button1.Location = new System.Drawing.Point(25, 553);
-        button1.Name = "button1";
-        button1.Size = new System.Drawing.Size(122, 41);
-        button1.TabIndex = 1;
-        button1.Text = "Thêm";
-        button1.UseVisualStyleBackColor = true;
-        // 
-        // button2
-        // 
-        button2.Location = new System.Drawing.Point(244, 553);
-        button2.Name = "button2";
-        button2.Size = new System.Drawing.Size(122, 41);
-        button2.TabIndex = 2;
-        button2.Text = "Sửa";
-        button2.UseVisualStyleBackColor = true;
-        // 
-        // button3
-        // 
-        button3.Location = new System.Drawing.Point(469, 553);
-        button3.Name = "button3";
-        button3.Size = new System.Drawing.Size(122, 41);
-        button3.TabIndex = 3;
-        button3.Text = "Xóa";
-        button3.UseVisualStyleBackColor = true;
-        // 
-        // button4
-        // 
-        button4.Location = new System.Drawing.Point(698, 553);
-        button4.Name = "button4";
-        button4.Size = new System.Drawing.Size(122, 41);
-        button4.TabIndex = 4;
-        button4.Text = "Làm mới";
-        button4.UseVisualStyleBackColor = true;
-        // 
-        // label1
-        // 
-        label1.Location = new System.Drawing.Point(30, 21);
-        label1.Name = "label1";
-        label1.Size = new System.Drawing.Size(110, 41);
-        label1.TabIndex = 5;
-        label1.Text = "Mã nhân viên";
-        // 
-        // label2
-        // 
-        label2.Location = new System.Drawing.Point(237, 21);
-        label2.Name = "label2";
-        label2.Size = new System.Drawing.Size(110, 41);
-        label2.TabIndex = 6;
-        label2.Text = "Tên nhân viên";
-        label2.Click += label2_Click;
-        // 
-        // label3
-        // 
-        label3.Location = new System.Drawing.Point(703, 21);
-        label3.Name = "label3";
-        label3.Size = new System.Drawing.Size(110, 27);
-        label3.TabIndex = 7;
-        label3.Text = "Ngày làm";
-        label3.Click += label3_Click;
-        // 
-        // label4
-        // 
-        label4.Location = new System.Drawing.Point(462, 21);
-        label4.Name = "label4";
-        label4.Size = new System.Drawing.Size(110, 27);
-        label4.TabIndex = 8;
-        label4.Text = "Ca làm việc";
-        // 
-        // panel1
-        // 
-        panel1.Controls.Add(comboBox1);
-        panel1.Controls.Add(dateTimePicker1);
-        panel1.Controls.Add(textBox2);
-        panel1.Controls.Add(textBox1);
-        panel1.Controls.Add(label4);
-        panel1.Controls.Add(label3);
-        panel1.Controls.Add(label2);
-        panel1.Controls.Add(label1);
-        panel1.Location = new System.Drawing.Point(7, 7);
-        panel1.Name = "panel1";
-        panel1.Size = new System.Drawing.Size(853, 94);
-        panel1.TabIndex = 9;
-        // 
-        // textBox1
-        // 
-        textBox1.Location = new System.Drawing.Point(18, 54);
-        textBox1.Name = "textBox1";
-        textBox1.Size = new System.Drawing.Size(126, 27);
-        textBox1.TabIndex = 9;
-        // 
-        // textBox2
-        // 
-        textBox2.Location = new System.Drawing.Point(221, 54);
-        textBox2.Name = "textBox2";
-        textBox2.Size = new System.Drawing.Size(126, 27);
-        textBox2.TabIndex = 10;
-        // 
-        // dateTimePicker1
-        // 
-        dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-        dateTimePicker1.Location = new System.Drawing.Point(658, 51);
-        dateTimePicker1.Name = "dateTimePicker1";
-        dateTimePicker1.Size = new System.Drawing.Size(155, 27);
-        dateTimePicker1.TabIndex = 11;
-        // 
-        // comboBox1
-        // 
-        comboBox1.FormattingEnabled = true;
-        comboBox1.Location = new System.Drawing.Point(452, 53);
-        comboBox1.Name = "comboBox1";
-        comboBox1.Size = new System.Drawing.Size(120, 28);
-        comboBox1.TabIndex = 12;
-        // 
+
+        // pnlFilter
+        pnlFilter.Controls.Add(lblMaNhanVien);
+        pnlFilter.Controls.Add(txtMaNhanVien);
+        pnlFilter.Controls.Add(lblTenNhanVien);
+        pnlFilter.Controls.Add(txtTenNhanVien);
+        pnlFilter.Controls.Add(lblCaLamViec);
+        pnlFilter.Controls.Add(cbbCaLamViec);
+        pnlFilter.Controls.Add(lblNgayLam);
+        pnlFilter.Controls.Add(dtpNgayLam);
+        pnlFilter.Dock = System.Windows.Forms.DockStyle.Top;
+        pnlFilter.BackColor = System.Drawing.SystemColors.Control;
+        pnlFilter.Padding = new System.Windows.Forms.Padding(12);
+        pnlFilter.Size = new System.Drawing.Size(906, 70);
+        pnlFilter.Name = "pnlFilter";
+        pnlFilter.TabIndex = 0;
+
+        // lblMaNhanVien
+        lblMaNhanVien.AutoSize = true;
+        lblMaNhanVien.Location = new System.Drawing.Point(18, 12);
+        lblMaNhanVien.Name = "lblMaNhanVien";
+        lblMaNhanVien.Text = "Mã nhân viên";
+        lblMaNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+
+        // txtMaNhanVien
+        txtMaNhanVien.Location = new System.Drawing.Point(18, 38);
+        txtMaNhanVien.Name = "txtMaNhanVien";
+        txtMaNhanVien.Size = new System.Drawing.Size(160, 27);
+        txtMaNhanVien.TabIndex = 0;
+
+        // lblTenNhanVien
+        lblTenNhanVien.AutoSize = true;
+        lblTenNhanVien.Location = new System.Drawing.Point(200, 12);
+        lblTenNhanVien.Name = "lblTenNhanVien";
+        lblTenNhanVien.Text = "Tên nhân viên";
+        lblTenNhanVien.Font = new System.Drawing.Font("Segoe UI", 9F);
+
+        // txtTenNhanVien
+        txtTenNhanVien.Location = new System.Drawing.Point(200, 38);
+        txtTenNhanVien.Name = "txtTenNhanVien";
+        txtTenNhanVien.Size = new System.Drawing.Size(200, 27);
+        txtTenNhanVien.TabIndex = 1;
+
+        // lblCaLamViec
+        lblCaLamViec.AutoSize = true;
+        lblCaLamViec.Location = new System.Drawing.Point(420, 12);
+        lblCaLamViec.Name = "lblCaLamViec";
+        lblCaLamViec.Text = "Ca làm việc";
+        lblCaLamViec.Font = new System.Drawing.Font("Segoe UI", 9F);
+
+        // cbbCaLamViec
+        cbbCaLamViec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+        cbbCaLamViec.FormattingEnabled = true;
+        cbbCaLamViec.Location = new System.Drawing.Point(420, 38);
+        cbbCaLamViec.Name = "cbbCaLamViec";
+        cbbCaLamViec.Size = new System.Drawing.Size(160, 28);
+        cbbCaLamViec.TabIndex = 2;
+
+        // lblNgayLam
+        lblNgayLam.AutoSize = true;
+        lblNgayLam.Location = new System.Drawing.Point(600, 12);
+        lblNgayLam.Name = "lblNgayLam";
+        lblNgayLam.Text = "Ngày làm";
+        lblNgayLam.Font = new System.Drawing.Font("Segoe UI", 9F);
+
+        // dtpNgayLam
+        dtpNgayLam.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+        dtpNgayLam.Location = new System.Drawing.Point(600, 38);
+        dtpNgayLam.Name = "dtpNgayLam";
+        dtpNgayLam.Size = new System.Drawing.Size(180, 27);
+        dtpNgayLam.TabIndex = 3;
+
+        // dgvCaLamViec
+        dgvCaLamViec.Dock = System.Windows.Forms.DockStyle.Fill;
+        dgvCaLamViec.Name = "dgvCaLamViec";
+        dgvCaLamViec.RowHeadersVisible = false;
+        dgvCaLamViec.RowHeadersWidth = 51;
+        dgvCaLamViec.AllowUserToAddRows = false;
+        dgvCaLamViec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+        dgvCaLamViec.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+        dgvCaLamViec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+        dgvCaLamViec.TabIndex = 1;
+        dgvCaLamViec.CellClick += dgvCaLamViec_CellClick;
+
+        // pnlFooter
+        pnlFooter.Controls.Add(btThem);
+        pnlFooter.Controls.Add(btSua);
+        pnlFooter.Controls.Add(btXoa);
+        pnlFooter.Controls.Add(btLamMoi);
+        pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+        pnlFooter.BackColor = System.Drawing.SystemColors.Control;
+        pnlFooter.Size = new System.Drawing.Size(906, 55);
+        pnlFooter.Name = "pnlFooter";
+        pnlFooter.TabIndex = 2;
+
+        // btThem
+        btThem.Anchor = System.Windows.Forms.AnchorStyles.Left;
+        btThem.Location = new System.Drawing.Point(14, 10);
+        btThem.Name = "btThem";
+        btThem.Size = new System.Drawing.Size(110, 34);
+        btThem.TabIndex = 0;
+        btThem.Text = "Thêm";
+        btThem.UseVisualStyleBackColor = true;
+        btThem.Click += btThem_Click;
+
+        // btSua
+        btSua.Anchor = System.Windows.Forms.AnchorStyles.Left;
+        btSua.Location = new System.Drawing.Point(140, 10);
+        btSua.Name = "btSua";
+        btSua.Size = new System.Drawing.Size(110, 34);
+        btSua.TabIndex = 1;
+        btSua.Text = "Sửa";
+        btSua.UseVisualStyleBackColor = true;
+        btSua.Click += btSua_Click;
+
+        // btXoa
+        btXoa.Anchor = System.Windows.Forms.AnchorStyles.Left;
+        btXoa.Location = new System.Drawing.Point(266, 10);
+        btXoa.Name = "btXoa";
+        btXoa.Size = new System.Drawing.Size(110, 34);
+        btXoa.TabIndex = 2;
+        btXoa.Text = "Xóa";
+        btXoa.UseVisualStyleBackColor = true;
+        btXoa.Click += btXoa_Click;
+
+        // btLamMoi
+        btLamMoi.Anchor = System.Windows.Forms.AnchorStyles.Right;
+        btLamMoi.Location = new System.Drawing.Point(782, 10);
+        btLamMoi.Name = "btLamMoi";
+        btLamMoi.Size = new System.Drawing.Size(110, 34);
+        btLamMoi.TabIndex = 3;
+        btLamMoi.Text = "Làm mới";
+        btLamMoi.UseVisualStyleBackColor = true;
+        btLamMoi.Click += btLamMoi_Click;
+
         // FormManageShift
-        // 
         AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(906, 606);
-        Controls.Add(panel1);
-        Controls.Add(button4);
-        Controls.Add(button3);
-        Controls.Add(button2);
-        Controls.Add(button1);
-        Controls.Add(dataGridView1);
+        Controls.Add(dgvCaLamViec);
+        Controls.Add(pnlFooter);
+        Controls.Add(pnlFilter);
+        Name = "FormManageShift";
         Text = "Quản lí ca làm việc";
-        ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-        panel1.ResumeLayout(false);
-        panel1.PerformLayout();
+        this.Load += FormManageShift_Load;
+
+        pnlFilter.ResumeLayout(false);
+        pnlFilter.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)dgvCaLamViec).EndInit();
+        pnlFooter.ResumeLayout(false);
         ResumeLayout(false);
     }
 
-    private System.Windows.Forms.ComboBox comboBox1;
-
-    private System.Windows.Forms.DateTimePicker dateTimePicker1;
-
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.TextBox textBox2;
-
-    private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.Panel panel1;
-
-    private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.Label label3;
-
-    private System.Windows.Forms.Label label1;
-
-    private System.Windows.Forms.Button button1;
-    private System.Windows.Forms.Button button2;
-    private System.Windows.Forms.Button button3;
-    private System.Windows.Forms.Button button4;
-
-    private System.Windows.Forms.DataGridView dataGridView1;
+    private System.Windows.Forms.Panel pnlFilter;
+    private System.Windows.Forms.Panel pnlFooter;
+    private System.Windows.Forms.Label lblMaNhanVien;
+    private System.Windows.Forms.Label lblTenNhanVien;
+    private System.Windows.Forms.Label lblCaLamViec;
+    private System.Windows.Forms.Label lblNgayLam;
+    private System.Windows.Forms.TextBox txtMaNhanVien;
+    private System.Windows.Forms.TextBox txtTenNhanVien;
+    private System.Windows.Forms.ComboBox cbbCaLamViec;
+    private System.Windows.Forms.DateTimePicker dtpNgayLam;
+    private System.Windows.Forms.DataGridView dgvCaLamViec;
+    private System.Windows.Forms.Button btThem;
+    private System.Windows.Forms.Button btSua;
+    private System.Windows.Forms.Button btXoa;
+    private System.Windows.Forms.Button btLamMoi;
 
     #endregion
 }
